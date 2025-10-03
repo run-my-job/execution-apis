@@ -4,8 +4,8 @@ on: [push, pull_request, workflow_dispatch]
 jobs:
   build:
     name: Spellcheck
-    runs-on: ubuntu-latest
+    runs-on: puzl-ubuntu-latest
     steps:
-    - uses: actions/checkout@master
-    - uses: rojopolis/spellcheck-github-actions@0.29.0
-      name: Spellcheck
+      - uses: actions/checkout@master
+      - uses: rojopolis/spellcheck-github-actions@0.29.0
+        name: Spellcheck
